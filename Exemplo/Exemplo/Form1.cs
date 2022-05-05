@@ -16,5 +16,11 @@ namespace Exemplo
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello Word!");
+            MessageBox.Show("Eu falei foi olá mundo!");
+        }
     }
 }
