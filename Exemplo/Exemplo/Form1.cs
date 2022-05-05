@@ -21,6 +21,7 @@ namespace Exemplo
         {
             MessageBox.Show("Hello Word!");
             MessageBox.Show("Eu falei foi olá mundo!");
+            MessageBox.Show("teste!");
         }
     }
 }
