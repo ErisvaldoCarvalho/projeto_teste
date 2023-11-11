@@ -6,8 +6,10 @@ namespace Model
     {
         private int id;
         private string descricao;
-        private int id_Equipamento;
-        private int id_Perfil;
+        //private int equipamentoId;
+        //private int perfilId;
+        private Perfil perfil;
+        private Equipamento equipamento;
         private DateTime date;
 
         public int Id
@@ -20,16 +22,28 @@ namespace Model
             get { return descricao; }
             set { descricao = value; }
         }
-        public int Id_Equipamento
+        //public int EquipamentoId
+        //{
+        //    get { return equipamentoId; }
+        //    set { equipamentoId = value; }
+        //}
+        //public int PerfilId
+        //{
+        //    get { return perfilId; }
+        //    set { perfilId = value; }
+        //}
+        public Equipamento Equipamento
         {
-            get { return id_Equipamento; }
-            set { id_Equipamento = value; }
+            get { return equipamento; }
+            set { equipamento = value; }
         }
-        public int Id_Perfil
+
+        public Perfil Perfil
         {
-            get { return id_Perfil; }
-            set { id_Perfil = value; }
+            get { return perfil; }
+            set { perfil = value; }
         }
+
         public DateTime Data
         {
             get { return date; }

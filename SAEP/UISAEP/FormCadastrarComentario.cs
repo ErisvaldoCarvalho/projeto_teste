@@ -14,12 +14,12 @@ namespace UISAEP
 {
     public partial class FormCadastrarComentario : Form
     {
-        private int id_Equipamento;
+        private int equipamentoId;
 
         public FormCadastrarComentario(int _id_Equipamento)
         {
             InitializeComponent();
-            id_Equipamento = _id_Equipamento;
+            equipamentoId = _id_Equipamento;
         }
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
@@ -29,8 +29,8 @@ namespace UISAEP
                 ComentarioBLL comentarioBLL = new ComentarioBLL();
                 Comentario comentario = new Comentario();
                 comentario.Descricao = textBox1.Text;
-                comentario.Id_Equipamento = id_Equipamento;
-                comentario.Id_Perfil = Constantes.Id_Perfil;
+                //comentario.EquipamentoId = equipamentoId;
+                //comentario.EquipamentoId = Constantes.Id_Perfil;
                 comentarioBLL.Inserir(comentario);
                 Close();
             }

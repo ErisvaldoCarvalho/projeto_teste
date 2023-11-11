@@ -22,13 +22,13 @@ namespace DAL
                 pdescricao.Value = _comentario.Descricao;
                 cmd.Parameters.Add(pdescricao);
 
-                SqlParameter pid_Perfil = new SqlParameter("@Id_Perfil", SqlDbType.Int);
-                pid_Perfil.Value = _comentario.Id_Perfil;
-                cmd.Parameters.Add(pid_Perfil);
+                //SqlParameter pid_Perfil = new SqlParameter("@Id_Perfil", SqlDbType.Int);
+                //pid_Perfil.Value = _comentario.PerfilId;
+                //cmd.Parameters.Add(pid_Perfil);
 
-                SqlParameter pid_Equipamento = new SqlParameter("@Id_Equipamento", SqlDbType.Int);
-                pid_Equipamento.Value = _comentario.Id_Equipamento;
-                cmd.Parameters.Add(pid_Equipamento);
+                //SqlParameter pid_Equipamento = new SqlParameter("@Id_Equipamento", SqlDbType.Int);
+                //pid_Equipamento.Value = _comentario.EquipamentoId;
+                //cmd.Parameters.Add(pid_Equipamento);
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
